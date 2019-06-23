@@ -3,7 +3,7 @@ spring:
     mongodb:
       host: 192.168.136.104
       port: 27017
-      database: spit
+      database: spitdb
   application:
     name: tensquare-spit
   redis:
@@ -11,3 +11,6 @@ spring:
     port: 6379
 server:
   port: 9006
+jwt:
+  config:
+    key: imxushuai

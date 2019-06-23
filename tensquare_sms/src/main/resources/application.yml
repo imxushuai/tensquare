@@ -1,0 +1,17 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: sms-service
+  rabbitmq:
+    # 主机地址
+    host: 192.168.136.104
+  redis:
+    host: 192.168.136.104
+    port: 6379
+tensquare:
+  sms:
+    accessKeyID: LTAIuWlh7av0jbNc
+    accessKeySecret: v2dyGOax07EEb3IOACClHaYvIu1RJm
+    signName: 徐帅
+    verifyCodeTemplate: SMS_140280006

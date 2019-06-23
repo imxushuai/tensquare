@@ -13,3 +13,11 @@ spring:
   jpa: 
     database: MySQL
     show-sql: true
+  data:
+    mongodb:
+      host: 192.168.136.104
+      port: 27017
+      database: commentdb
+jwt:
+  config:
+    key: imxushuai
