@@ -16,6 +16,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
+import javax.transaction.Transactional;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
@@ -241,6 +242,26 @@ public class UserService {
             return user;
         }
         return null;
+    }
+
+    /**
+     * 更新粉丝数
+     *
+     * @param x
+     */
+    @Transactional
+    public void incFanscount(String userid, int x) {
+        userDao.incFanscount(userid, x);
+    }
+
+    /**
+     * 更新关注数
+     *
+     * @param x
+     */
+    @Transactional
+    public void incFollowcount(String userid, int x) {
+        userDao.incFollowcount(userid, x);
     }
 
 }

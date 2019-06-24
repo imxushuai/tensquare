@@ -158,4 +158,21 @@ public class UserController {
         return new Result(false, StatusCode.LOGINERROR, "用户名或密码错误");
     }
 
+    /**
+     * 增加粉丝数
+     */
+    @RequestMapping(value = "/incfans/{userid}/{x}", method = RequestMethod.POST)
+    public void incFanscount(@PathVariable String userid, @PathVariable int x) {
+        userService.incFanscount(userid, x);
+    }
+
+    /**
+     * 增加关注数
+     */
+    @RequestMapping(value = "/incfollow/{userid}/{x}", method =
+            RequestMethod.POST)
+    public void incFollowcount(@PathVariable String userid, @PathVariable int x) {
+        userService.incFollowcount(userid, x);
+    }
+
 }
