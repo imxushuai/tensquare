@@ -1,0 +1,40 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: tensquare‐manager #指定服务名
+eureka:
+  instance:
+    prefer‐ip‐address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+zuul:
+  routes:
+    tensquare‐gathering: #活动
+      path: /gathering/**
+      serviceId: tensquare‐gathering
+    tensquare‐article: #文章
+      path: /article/**
+      serviceId: tensquare‐article
+    tensquare‐base: #基础
+      path: /base/**
+      serviceId: tensquare‐base
+    tensquare‐friend: #交友
+      path: /friend/**
+      serviceId: tensquare‐friend
+    tensquare‐qa: #问答
+      path: /qa/**
+      serviceId: tensquare‐qa
+    tensquare‐recruit: #招聘
+      path: /recruit/**
+      serviceId: tensquare‐recruit
+    tensquare‐spit: #吐槽
+      path: /spit/**
+      serviceId: tensquare‐spit
+    tensquare‐user: #用户
+      path: /user/**
+      serviceId: tensquare‐user
+jwt:
+  config:
+    key: imxushuai
