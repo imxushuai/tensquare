@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: tensquare‐config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/imxushuai/tensquare_config.git
+  rabbitmq:
+    host: 192.168.136.104
+server:
+  port: 12000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

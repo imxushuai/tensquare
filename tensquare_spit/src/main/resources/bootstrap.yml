@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      # 应用名
+      name: spit
+      # 环境
+      profile: dev
+      # 分支
+      label: master
+      # 配置中心地址
+      uri: http://127.0.0.1:12000
