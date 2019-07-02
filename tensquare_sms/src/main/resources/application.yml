@@ -11,7 +11,7 @@ spring:
     port: 6379
 tensquare:
   sms:
-    accessKeyID: LTAIuWlh7av0jbNc
-    accessKeySecret: v2dyGOax07EEb3IOACClHaYvIu1RJm
-    signName: 徐帅
-    verifyCodeTemplate: SMS_140280006
+    accessKeyID: XXXXXXXXXXXX
+    accessKeySecret: XXXXXXXXXXXXXXXXXX
+    signName: XXXX
+    verifyCodeTemplate: XXXXXXXXXX
