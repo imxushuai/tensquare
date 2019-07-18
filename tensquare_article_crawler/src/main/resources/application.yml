@@ -1,0 +1,17 @@
+server:
+  port: 9014
+spring:
+  application:
+    name: tensquare-article-crawler
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.136.104:3306/tensquare_article?characterEncoding=UTF8
+    username: root
+    password: 123456
+  jpa:
+    database: mysql
+    show-sql: true
+  redis:
+    host: 192.168.136.104
+ai:
+  dataPath: E:/article
