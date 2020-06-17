@@ -13,11 +13,11 @@
 
 ### 功能架构
 
-![](https://raw.githubusercontent.com/imxushuai/ForPicGo/master/0702155446293.png)
+![](https://imxushuai-01.coding.net/p/pic/d/pic/git/raw/master/0702155446293.png)
 
 ### 技术架构
 
-![](https://raw.githubusercontent.com/imxushuai/ForPicGo/master/0702155446294.png)
+![](https://imxushuai-01.coding.net/p/pic/d/pic/git/raw/master/0702155446294.png)
 
 ## 微服务模块介绍
 
